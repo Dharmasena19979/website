@@ -1,0 +1,50 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js (needed for Next.js)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Adjust the version as per your project needs
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the Next.js application
+      - name: Build Next.js application
+        run: npm run build
+
+      # Set up Docker Buildx (needed for building multi-platform Docker images)
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      # Log in to Docker Hub securely using secrets
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}  # Securely using GitHub Secrets
+          password: ${{ secrets.DOCKER_PASSWORD }}  # Securely using GitHub Secrets
+
+      # Build Docker image
+      - name: Build Docker image
+        run: |
+          docker build -t Thisara:latest .
+
+      # Push Docker image to Docker Hub
+      - name: Push Docker image
+        run: |
+          docker push Thisara:latest
