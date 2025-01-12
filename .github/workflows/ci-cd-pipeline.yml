@@ -42,9 +42,9 @@ jobs:
       # Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t Thisara:latest .
+          docker build -t thisara:latest .
 
       # Push Docker image to Docker Hub
       - name: Push Docker image
         run: |
-          docker push Thisara:latest
+          docker push thisara:latest
