@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
                             <div className="content md:w-5/6 w-full">
                                 <p className="p1"><b>PRIVACY POLICY</b></p>
                                 <p className="p3">
-                                    At Horizonexo, your privacy is our top priority. This policy outlines how we collect, use, and protect your personal information.
+                                    At Horizonexo,  is our top priority. This policy outlines how we collect, use, and protect your personal information.
                                 </p><br></br>
                                 <p className="p2"><b>1. Information We Collect</b></p>
                                 <ul className="ul1">
