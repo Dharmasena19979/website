@@ -58,7 +58,7 @@ jobs:
       # Build the Docker image
       - name: Build Docker image
         run: |
-          docker buildx build --tag ${{ secrets.DOCKER_USERNAME }}/your-repo-name:latest --push .
+          docker buildx build --tag ${{ secrets.DOCKER_USERNAME }}/dharmasena19979:latest --push .
 
       # (Optional) Deploy your app (e.g., to AWS, Heroku, or another cloud platform)
       # - name: Deploy to Cloud
