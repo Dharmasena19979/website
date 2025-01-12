@@ -34,7 +34,7 @@ const Faqs = () => {
                                     onClick={() => handleActiveQuestion('1')}
                                 >
                                     <div className="heading flex items-center justify-between gap-6">
-                                        <div className="heading6">How do I know that  order has been successfully submitted?</div>
+                                        <div className="heading6">How do I know that  order been successfully submitted?</div>
                                         <Icon.CaretRight size={24} />
                                     </div>
                                     <div className="content body1 text-secondary">You will receive an email confirmation containing the Order Number and details of your purchase.</div>
