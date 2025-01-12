@@ -20,7 +20,7 @@ const Refund = () => {
                             <div className="content md:w-5/6 w-full">
                                 <p className="p1"><b>RETURNS & REFUNDS</b></p><br></br>
                                 <p className="p3">
-                                    We strive to deliver you the best in quality and value. If for any reason you are not
+                                    We strive to deliver the best in quality and value. If for any reason you are not
                                     satisfied with your order, we are happy to take back the product and issue you a full refund.
                                 </p>
                                 <ol className="ol1">
