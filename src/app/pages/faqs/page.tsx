@@ -47,7 +47,7 @@ const Faqs = () => {
                                         <div className="heading6">How is my order shipped?</div>
                                         <Icon.CaretRight size={24} />
                                     </div>
-                                    <div className="content body1 text-secondary">Orders are shipped during regular business days, excluding holidays. Any orders placed on Saturday or Sunday will be shipped the following Monday.</div>
+                                    <div className="content body1 text-secondary">Orders are shipped during regular  days, excluding holidays. Any orders placed on Saturday or Sunday will be shipped the following Monday.</div>
                                 </div>
                                 <div
                                     className={`question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer ${activeQuestion === '3' ? 'open' : ''}`}
